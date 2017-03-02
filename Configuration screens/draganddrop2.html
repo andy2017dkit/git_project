@@ -1,0 +1,210 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-6"><img src="C:\Users\Mary Ann\Downloads\Aspirin-tablet.jpg" draggable="true"  class="img-responsive img-thumbnail" style="width: 128px; height: 128px;"></div><div class="col-md-6"> -->
+            
+          <!-- </div> -->
+		  
+		  
+		  <script type="text/javascript">
+    function dragStart(e){
+        // Sets the operation allowed for a drag source
+        e.dataTransfer.effectAllowed = "move";
+    
+        // Sets the value and type of the dragged data
+        e.dataTransfer.setData("Text", e.target.getAttribute("id"));
+    }
+    function dragOver(e){
+        // Prevent the browser default handling of the data
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    function drop(e){
+        // Cancel this event for everyone else
+        e.stopPropagation();
+        e.preventDefault();
+    
+        // Retrieve the dragged data by type
+        var data = e.dataTransfer.getData("Text");
+    
+        // Append image to the drop box
+        e.target.appendChild(document.getElementById(data));
+    }
+</script>
+<style type="text/css">
+    #dropBox{
+        width: 180px;
+        height: 180px;
+        border: 5px dashed gray;
+        background: white;
+        text-align: center;
+        margin: 20px 0;
+        color: orange;
+    }
+    #dropBox img{
+        margin: 10px;
+    }
+</style>
+
+
+    <!-- <h2>Drag & Drop Demo</h2> -->
+    <!-- <p>Drag and drop the image into the drop box:</p> -->
+	    <img src="C:\Users\Mary Ann\Downloads\Aspirin-tablet.jpg" id="dragA" draggable="true" ondragstart="dragStart(event);" width="170" height="170" alt="Flying Kites">
+
+    <div id="dropBox" ondragover="dragOver(event);" ondrop="drop(event);">
+        <!--Dropped image will be inserted here-->
+    </div>
+
+		  
+		  
+		  
+		  
+		  
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group btn-group-lg" data-toggle="buttons">
+              <a class="active btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span> Dropdown <span class="badge">42</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Action</a>
+                </li>
+              </ul>
+            </div>
+			
+
+			
+			
+			
+			
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="info">Monday</th>
+                  <th class="info">Tuesday</th>
+                  <th class="info">Wednesday</th>
+                  <th class="info">Thursday</th>
+                  <th class="info">Friday</th>
+                  <th class="info">Saturday</th>
+                  <th class="info">Sunday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Morning</td>
+                 <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  <!-- <br><br> -->
+  <!-- <input type="submit"> -->
+</form>
+  </td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Evening</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>Night</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ol>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
