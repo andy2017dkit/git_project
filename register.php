@@ -30,14 +30,15 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body background="Capturess.png" no-repeat center center fixed;> 
 
 <div class="container">
       <form class="form-signin" method="POST">
       
       <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-        <h2 class="form-signin-heading">Please Register</h2>
+        <h1 align="center"> <img src="Logomakr_005PS1.png" alt="logo"   /></h1>
+		<h2 class="form-signin-heading">Please Register</h2>
         <div class="input-group">
 	  <span class="input-group-addon" id="basic-addon1">@</span>
 	  <input type="text" name="username" class="form-control" placeholder="Username" required>

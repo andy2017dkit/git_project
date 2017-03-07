@@ -44,15 +44,36 @@ echo "<a href='logout.php'>Logout</a>";
 
 <link rel="stylesheet" href="styles.css" >
 
+<style>
+
+
+ .logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+   
+
+
+</style>
+
+
+
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body background="Capturess.png" no-repeat center center fixed;> 
+
+
 
 <div class="container">
       <form class="form-signin" method="POST">
-      <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-        <h2 class="form-signin-heading">Please Login</h2>
+      
+<?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
+        <h1 align="center"> <img src="Logomakr_005PS1.png" alt="logo"   /></h1>
+		<h2 class="form-signin-heading">Please Login</h2>
         <div class="input-group">
 	  <span class="input-group-addon" id="basic-addon1">@</span>
 	  <input type="text" name="username" class="form-control" placeholder="Username" required>
