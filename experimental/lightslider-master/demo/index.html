@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+	 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+	 <link rel="stylesheet" type="text/css" href="assets/css/loadimg.min.css">
+    <link rel="stylesheet"  href="../src/css/lightslider.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+<style type="text/css">
+<style>
+.custom-date-style {
+	background-color: red !important;
+}
+
+.input{	
+}
+.input-wide{
+	width: 500px;
+}
+
+
+	
+</html>	
+	
+    
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color:#D0D0D0  ;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+		
+		 body {
+  background-image: url("teal.png");
+ background-size: 100% ;
+  }	
+  
+  #dropBox{
+        width: 180px;
+        height: 180px;
+        border: 5px dashed gray;
+        background: #D0D0D0;
+        text-align: center;
+        margin: 20px 0;
+        color: orange;
+    }
+    #dropBox img{
+        margin: 10px;
+    } 
+  
+  
+    </style>
+	
+	<script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+	
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../src/js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+           
+		});
+    </script>
+    
+	
+	
+	
+	
+</head>
+<body>
+	
+        <div class="item">
+            <ul id="content-slider" class="content-slider">
+                <li>
+                    <h3><img src="C:\Users\Mary Ann\Downloads\pill1.png" style="width:220px;height:27px" ></h3>
+                </li>
+                <li>
+                    <h3>2</h3>
+                </li>
+                <li>
+                    <h3>3</h3>
+                </li>
+                <li>
+                    <h3>4</h3>
+                </li>
+                <li>
+                    <h3>5</h3>
+                </li>
+                <li>
+                    <h3>6</h3>
+                </li>
+            </ul>
+        </div>
+
+<!-- upload image -->
+ <input type="file" accept="image/*"  onchange="showMyImage(this)" />
+ <br/>
+<img id="thumbnil" style="width:20%; margin-top:10px;"  src="" alt="image"/>
+<script>
+
+function showMyImage(fileInput) {
+
+        var files = fileInput.files;
+        for (var i = 0; i < files.length; i++) {           
+            var file = files[i];
+            var imageType = /image.*/;     
+            if (!file.type.match(imageType)) {
+                continue;
+            }           
+            var img=document.getElementById("thumbnil");            
+            img.file = file;    
+            var reader = new FileReader();
+            reader.onload = (function(aImg) { 
+                return function(e) { 
+                    aImg.src = e.target.result; 
+                }; 
+            })(img);
+			
+            reader.readAsDataURL(file);
+			}
+			}
+			
+			$(function(){
+  $('img.draggable').draggable({ scroll: true, cursor: "move"});
+});
+			
+			</script>
+
+	<h3>select date and time</h3>
+	
+	<input type="text" value="" id="datetimepicker"/><br><br>
+ 
+<select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>   
+  </select>
+
+<form>
+  <div>
+    <label><input type="checkbox" /> </label>
+  </div>
+</form>
+<!-- drop box space grey -->
+<!-- <div id = "container" style = "width:60%"> -->
+    <!-- <div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);"> -->
+	
+        <!-- <!--Dropped image will be inserted here--> 
+    <!-- </div> -->
+<!-- <div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);"> -->
+	
+        <!-- <!--Dropped image will be inserted here--> 
+	
+	<!-- <div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);"> -->
+	
+        <!-- <!--Dropped image will be inserted here--> 
+    <!-- </div> -->
+		  
+		<!-- </div>   -->
+
+
+
+
+	
+</body>
+
+
+
+<script src="jquery.datetimepicker.full.js"></script>
+<script>/*
+window.onerror = function(errorMsg) {
+	$('#console').html($('#console').html()+'<br>'+errorMsg)
+}*/
+
+$.datetimepicker.setLocale('en');
+
+$('#datetimepicker_format').datetimepicker({value:'2015/04/15 05:03', format: $("#datetimepicker_format_value").val()});
+console.log($('#datetimepicker_format').datetimepicker('getValue'));
+
+$("#datetimepicker_format_change").on("click", function(e){
+	$("#datetimepicker_format").data('xdsoft_datetimepicker').setOptions({format: $("#datetimepicker_format_value").val()});
+});
+$("#datetimepicker_format_locale").on("change", function(e){
+	$.datetimepicker.setLocale($(e.currentTarget).val());
+});
+
+$('#datetimepicker').datetimepicker({
+dayOfWeekStart : 1,
+lang:'en',
+disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
+startDate:	'2017/01/05'
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
