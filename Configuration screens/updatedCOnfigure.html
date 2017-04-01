@@ -1,0 +1,969 @@
+<html><head>
+<!-- <img src="Logomakr_005PS1.png" alt="My company name" /> -->
+<img style="margin:0px auto;display:block" src="Logomakr_005PS1.png" height="200" width="200"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+  <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  
+  </head><body>
+  
+  
+  <title>Thumbnail Carousel - Bootsnipp.com</title>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style type="text/css">
+        
+	 body {
+  background-image: url("Capturess.png");
+  }	
+		
+		
+       /* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #e8865c;
+}
+
+
+
+
+.carousel-indicators .active {
+background: #e8865c;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+    	    <div class="well"> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row-fluid">
+                	  <div class="span3"><a href="#x" class="thumbnail"><img src="C:\Users\Mary Ann\Downloads\Aspirin-tablet.jpg" id="dragA" draggable="true" ondragstart="dragStart(event);"   alt="Image" style="width:320px;height:180px" /></a></div>
+                	  <div class="span3"><a href="#x" class="thumbnail"><img src="C:\Users\Mary Ann\Downloads\vitamin.jpg" id="dragB" draggable="true" ondragstart="dragStart(event);"   alt="Image" style="width:320px;height:180px" /></a></div>
+                	  <div class="span3"><a href="#x" class="thumbnail"><img src="C:\Users\Mary Ann\Downloads\rsz_para.jpg" id="dragC" draggable="true" ondragstart="dragStart(event);"   alt="Image" style="width:320px;height:180px"/></a></div>
+                	  <div class="span3"><a href="#x" class="thumbnail"><img src="C:\Users\Mary Ann\Downloads\redpill.png" id="dragD" draggable="true" ondragstart="dragStart(event);"   alt="Image" style="width:320px;height:180px"/></a></div>
+                	</div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                <!-- <div class="item"> -->
+                	<!-- <div class="row-fluid"> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                	<!-- </div><!--/row-fluid-->
+                <!-- </div><!--/item--> 
+                <!-- <div class="item"> -->
+                	<!-- <div class="row-fluid"> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                		<!-- <div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" /></a></div> -->
+                	<!-- </div><!--/row-fluid-->
+                <!-- </div><!--/item-->
+                 
+                </div><!--/carousel-inner-->
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div><!--/myCarousel-->
+                 
+            </div><!--/well-->   
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+	    interval: 10000
+	})
+});
+</script>
+  
+  
+  
+  
+  
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-6"><img src="g" draggable="true"  class="img-responsive img-thumbnail" style="width: 128px; height: 128px;"></div><div class="col-md-6"> -->
+            <!-- C:\Users\Mary Ann\Downloads\Aspirin-tablet.jp -->
+          <!-- </div> -->
+		  
+		  
+		  <script type="text/javascript">
+    function dragStart(e){
+        // Sets the operation allowed for a drag source
+        e.dataTransfer.effectAllowed = "move";
+    
+        // Sets the value and type of the dragged data
+        e.dataTransfer.setData("Text", e.target.getAttribute("id"));
+    }
+    function dragOver(e){
+        // Prevent the browser default handling of the data
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    function drop(e){
+        // Cancel this event for everyone else
+        e.stopPropagation();
+        e.preventDefault();
+    
+        // Retrieve the dragged data by type
+        var data = e.dataTransfer.getData("Text");
+    
+        // Append image to the drop box
+        e.target.appendChild(document.getElementById(data));
+    }
+</script>
+<style type="text/css">
+    #dropBox{
+        width: 180px;
+        height: 180px;
+        border: 5px dashed gray;
+        background: #D0D0D0;
+        text-align: center;
+        margin: 20px 0;
+        color: orange;
+    }
+    #dropBox img{
+        margin: 10px;
+    }
+	
+input[type="checkbox"]{
+  background: url('http://refundfx.com.au/uploads/image/checkbox_full.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  
+#wrapper{width:100%; height:400px; border:1px solid black;}
+button{height:20px; position:relative; margin: -20px -50px; width:100px; top:70%; left:10%;}
+  
+  
+  
+}	
+	
+	
+</style>
+
+
+    <!-- <h2>Drag & Drop Demo</h2> -->
+    <!-- <p>Drag and drop the image into the drop box:</p> -->
+	    <!-- <img src="C:\Users\Mary Ann\Downloads\Aspirin-tablet.jpg" id="dragA" draggable="true" ondragstart="dragStart(event);" width="170" height="170" alt="Flying Kites"> -->
+<div id = "container" style = "width:60%">
+    <div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);">
+	
+        <!--Dropped image will be inserted here-->
+    </div>
+<div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);">
+	
+        <!--Dropped image will be inserted here-->
+    </div>
+	
+	<div id="dropBox" style = "float:left; width: 25%" ondragover="dragOver(event);" ondrop="drop(event);">
+	
+        <!--Dropped image will be inserted here-->
+    </div>
+		  
+		</div>  
+		  
+		  
+		  
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+           
+			
+
+			
+			<!-- morning 1st monday -->
+			
+			
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th class="info">Monday</th>
+                  <th class="info">Tuesday</th>
+                  <th class="info">Wednesday</th>
+                  <th class="info">Thursday</th>
+                  <th class="info">Friday</th>
+                  <th class="info">Saturday</th>
+                  <th class="info">Sunday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+				
+                  <td bgcolor="#FF0000">Morning <font color="black">With Food</font>
+				  <br />
+				  Select a time:
+				  </td>
+                 <td> <form action="/action_page.php">
+				   <div id="datetimepicker" class="input-append date">
+      <input type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+    </div>
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'pt-BR'
+      });
+    </script>
+				 
+				 
+				 
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>   
+  </select>
+  <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  
+  </td>
+  
+     <!-- tuesday morning -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+        
+
+			<!-- wednesday morning -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ 
+                  <!-- thursday morning -->
+				  
+				  
+				  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ <!-- friday morning -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+  
+  <!-- saturday morning -->
+  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ <!-- sunday morning -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ 
+ 
+                </tr>
+				
+	<tr>
+				<!--monday Evening time tab -->
+                  <td bgcolor="#01DFD7">Evening <font color="black">With Food</font>
+				  <br />
+				  Select a time:
+				  </td>
+                 <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>   
+  </select>
+  <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  
+  </td>
+	
+		     <!-- tuesday Evening -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+        
+
+			<!-- wednesday evening -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ 
+                  <!-- thursday Evening -->
+				  
+				  
+				  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+		<!-- friday Evening -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+  
+	<!-- saturday Evening -->
+  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+	`	<!-- sunday Evening -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  
+</form>
+  </td>
+ 		
+				<!-- MONDAY NIGHT -->
+				
+	<tr>
+				
+                  <td bgcolor="#B33ABC">NightTime <font color="white">With Food</font>
+				  <br />
+				  Select a time:
+				  </td>
+                 <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>   
+  </select>
+  <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  
+  </td>
+  
+     <!-- tuesday NIGHT -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  </td>
+        
+
+			<!-- wednesday NIGHT -->
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  </td>
+ 
+                  <!-- thursday NIGHT -->
+				  
+				  
+				  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  </td>
+ <!-- friday NIGHT -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  </td>
+  
+  <!-- saturday NIGHT -->
+  
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</form>
+  </td>
+ <!-- sunday NIGHT -->
+ 
+     <td> <form action="/action_page.php">
+  <select name="pills">
+  <label for="name">Name</label>
+<option  disabled selected>No.of pills:</option>
+ <option value="one"> 0</option>
+    <option value="one"> 1 </option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="four">4</option>
+	<option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+   <option value="eight">8</option>
+    <option value="nine">9</option>
+    
+    
+  </select>
+  
+  
+   <input type='checkbox' />
+  
+  <br /> 
+  <br />
+  <form action="/action_page.php">
+  
+  <input type="time" name="usr_time">
+  <div id="wrapper">
+         <button type="button">set reminder</button>
+</div>
+</form>
+  </td>
+ 
+ 
+                </tr>			
+				
+				
+				
+				
+
+				
+                
+            </table>
+        
+        </div>
+      
+    </div>
+	
+    
+  
+
+</body></html>
