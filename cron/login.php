@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>Creating a simple to-do application - Part 1</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -67,8 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
 	<footer id="footer">
 		<details>
-			<summary>Copyright 2013</summary>
-			<p>Jonathan Schnittger. All Rights Reserved.</p>
+			
 		</details>
 	</footer>
 </div>
